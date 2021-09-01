@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="TimeKeeper 0.0"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAlarm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Alarm"
+        app:layout_constraintEnd_toStartOf="@+id/btnAbtAlarm"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnAbtAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+    <Button
+        android:id="@+id/btnTimer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Timer"
+        app:layout_constraintEnd_toStartOf="@+id/btnAbtTimer"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlarm" />
+
+    <Button
+        android:id="@+id/btnAbtTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAbtAlarm" />
+    <Button
+        android:id="@+id/btnStopwatch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Stopwatch"
+        app:layout_constraintEnd_toStartOf="@+id/btnAbtStopwatch"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTimer" />
+
+    <Button
+        android:id="@+id/btnAbtStopwatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAbtTimer" />
+
+    <Button
+        android:id="@+id/btnChime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Chime"
+        app:layout_constraintEnd_toStartOf="@+id/btnAbtChime"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStopwatch" />
+
+    <Button
+        android:id="@+id/btnAbtChime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAbtStopwatch" />
+
+    <Button
+        android:id="@+id/btnTask"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Task"
+        app:layout_constraintEnd_toStartOf="@+id/btnAbtTask"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnChime" />
+
+    <Button
+        android:id="@+id/btnAbtTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAbtChime" />
+
+    <Button
+        android:id="@+id/btnMotivation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Motivate me"
+        app:layout_constraintEnd_toStartOf="@+id/btnAbtMotivation"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTask" />
+
+    <Button
+        android:id="@+id/btnAbtMotivation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAbtTask" />
+
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="About TimeKeeper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMotivation" />
+</androidx.constraintlayout.widget.ConstraintLayout>
